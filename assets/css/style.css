@@ -1,0 +1,133 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+.navbar{
+	display: grid;
+	grid-template-columns: 40% auto;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+.nav{
+	display: flex;
+}
+
+.nav-item{
+	margin:40px;
+	list-style: none;
+}
+
+.nav-item a{
+	font-family: sans-serif;
+	font-size: 16px;
+	text-decoration-line: none;
+	color: black;
+}
+
+
+
+
+
+
+
+.jumbotron{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+}
+.sess-a{
+	padding: 50px;
+}
+
+.jumbotext{
+	width: 50%;
+	margin: 50px;
+}
+
+.sess-b{
+	background: #FFFFD4;
+}
+
+.title{
+	font-size: 80px;
+	font-family: sans-serif;
+}
+
+.subtitle{
+	line-height: 30px;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+
+.input-code{
+	height: 30px;
+	width: 100%;
+}
+
+.sess-input{
+	margin-top: 10px;
+	display: flex;
+}
+
+.button-reveral{
+	margin-left: 5px;
+	background: #E093FB;
+	color: white;
+	border: none;
+}
+
+.sign-in, .sign-up{
+	height: 50px;
+	width: 100%;
+	border-radius: 10px;
+	font-size: 20px;
+	border: none;
+	box-shadow: 2px 2px 4px gray;
+	font-family: sans-serif;
+}
+
+.sign-in{
+	margin-right: 5px;
+	background: #E093FB;
+	color: white;
+}
+
+.sign-up{
+	margin-right: 5px;
+	background: white;
+	color: gray;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+}
+
+.col-a{
+
+}
+
+.pc-wrapper{
+	width: 70%;
+	transform: translate(-50px, -250px);
+}
+
+.lang-wrapper{
+
+	margin-left: auto;
+	background: white;
+	width: 10%;
+	padding: 20px;
+}
+
+.img-lang{
+	width: 100%;
+	margin: 10px;
+}
