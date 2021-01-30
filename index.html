@@ -6,32 +6,50 @@
 	<title>Learn.IO | Ayo belajar coding</title>
 	<link rel="icon" href="assets/img/logo.png">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome/css/font-awesome.min.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 	<div class="navbar">
 		<div class="nav-logo">
-			
+			<img src="assets/img/icon.png" width="100%">
 		</div>
+		<button class="mobile-collapse"><i class="fa fa-bars fa-2x"></i></button>
 		<ul class="nav">
-			<li class="nav-item"><a href="#">Special offers</a></li>
-			<li class="nav-item"><a href="#">Pricing</a></li>
-			<li class="nav-item"><a href="#">Testimoni</a></li>
-			<li class="nav-item"><a href="#">Class</a></li>
-			<li class="nav-item"><a href="#">About</a></li>
+			<li class="hidden"><a class="nav-item" href="#pricing">Special offers</a></li>
+			<li class="hidden"><a class="nav-item" href="#pricing">Pricing</a></li>
+			<li class="hidden"><a class="nav-item" href="#about">About</a></li>
+			<li class="hidden"><a class="nav-item" href="#testimoni">Testimoni</a></li>
+			<li class="hidden"><a class="nav-item" href="#contact">Contact US</a></li>
+			
+		</ul>
+		<ul class="nav mobile-nav">
+			<li><a class="nav-item" href="#pricing">Special offers</a></li>
+			<li><a class="nav-item" href="#pricing">Pricing</a></li>
+			<li><a class="nav-item" href="#about">About</a></li>
+			<li><a class="nav-item" href="#testimoni">Testimoni</a></li>
+			<li><a class="nav-item" href="#contact">Contact US</a></li>
 		</ul>
 	</div>
 
-	<div class="jumbotron">
+	<div class="jumbotron" id="jumbotron">
 		<div class="sess-a">
 			<div class="jumbotext">
-				<h1 class="title">Learn.io</h1>
+				<h1 class="title">
+					Want to become a programmer?
+				</h1>
+				<br>
 				<p class="subtitle">
-					Find the best way tolearn about programming get our free access and 
+					Find the best way 
+					to learn about programming get our free access and 
 					unlimited just input your reveral code
 				</p>
 				<div class="sess-input">
-					<input type="text" name="code" class="input-code">
+					<input type="text" name="code" class="form">
 					<input type="button" name="send" class="button-reveral" value="Submit">
 				</div>
 				<div class="sess-input">
@@ -40,7 +58,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="sess-b">
+		<div class="sess-b hidden">
 			
 			<div class="lang-wrapper">
 				<img src="assets/img/css.png" class="img-lang">
@@ -52,14 +70,176 @@
 		</div>
 	</div>
 
-	<div class="grid-container">
-		<div class="col-a"></div>
+	<div class="grid-container" id="pricing">
+		<div class="col-a hidden"></div>
 		<div class="col-a">
-			<div class="pc-wrapper">
-				<img src="assets/img/monitor.png" width="100%">
+			<div class="pc-wrapper" data-aos="fade-left">
+				<iframe 
+					src="https://www.youtube.com/embed/c_fRtpQf4Oc">
+				</iframe>
+				<img src="assets/img/monitor.png" width="100%" style="margin-top: -280px">
 			</div>
 		</div>
 	</div>
+
+	<div class="container mt-8">
+
+		<div class="grid-flex">
+			<div class="col-a" data-aos="fade-up" data-aos-duration="4000" >
+				<div class="card pricing-list pricing-list-rise">
+					<h3 class="card-text">Basic</h3>
+					<h5 class="card-subtext">IDR 120000</h5>
+					<button class="price-button"><i class="fa fa-shopping-cart fa-2x"></i></button>
+
+				</div>
+			</div>
+			<div class="col-a" data-aos="fade-down" data-aos-duration="4000">
+				<div class="card pricing-list pricing-list-rise">
+					<h3 class="card-text">Standart</h3>
+					<h5 class="card-subtext">IDR 150000</h5>
+					<button class="price-button"><i class="fa fa-shopping-cart fa-2x"></i></button>
+				</div>
+			</div>
+			<div class="col-a" data-aos="fade-up" data-aos-duration="4000">
+				<div class="card pricing-list pricing-list-rise">
+					<h3 class="card-text">Premium</h3>
+					<h5 class="card-subtext">IDR 300000</h5>
+					<button class="price-button"><i class="fa fa-shopping-cart fa-2x"></i></button>
+				</div>
+			</div>
+			<div class="col-a" data-aos="fade-down" data-aos-duration="4000">
+				<div class="card pricing-list pricing-list-rise">
+					<h3 class="card-text">Freemium</h3>
+					<h5 class="card-subtext">IDR 350000</h5>
+					<button class="price-button"><i class="fa fa-shopping-cart fa-2x"></i></button>
+					<button class="price-button bg-light">Free 30 D</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mt-8 grid-flex" id="about">
+		<div class="col-a" data-aos="fade-right">
+			<img src="assets/img/wfh.png" width="100%">
+		</div>
+		<div class="col-a" data-aos="fade-left">
+			<h2 class="tagline">
+				Build your dream<br>
+				career in technology
+			</h2><br>
+			<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, soluta, in animi dolore aut officiis consectetur, quisquam maxime quis ea omnis, Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit aspernatur culpa hic sit tempore suscipit! Expedita, tempore earum? Nobis eaque quasi esse est, velit corrupti aut asperiores. Dolores, ut?</p>
+		</div>
+	</div>
+
+	<div class="container grid-flex">
+		<div class="col-a" data-aos="fade-up">
+			<h2 class="tagline">
+				Come grow with US<br>
+				with more than 10000+<br>
+				other students
+			</h2>
+			<button class="take-course">Take the course</button>
+		</div>
+		<div class="col-a" data-aos="fade-down">
+			<img src="assets/img/tech.jpg" width="100%">
+		</div>
+		
+	</div>
+
+	<div class="p-5 mb-5 bg-yellow">
+		<h2 class="subtagline">What they said?</h2>
+		<div class="grid-flex " id="testimoni">
+
+			<div class="col-a" data-aos="zoom-in">
+				<div class="testimoni p-2">
+					<img src="assets/img/team-2.jpg" class="img-rounded" width="100%">
+					<p class="text-testi">
+						"I feel so happy here <br> I got lots of new friends and <br> knowledge"
+					</p>
+					<p class="sub-testi">Amanda torrent</p>
+				</div>
+			</div>
+			<div class="col-a" data-aos="zoom-in">
+				<div class="testimoni p-2">
+					<img src="assets/img/tim2.jpg" class="img-rounded" width="100%">
+					<p class="text-testi">
+						"I have taken a python <br> course 2 month ago, <br> and claim the certificate"
+					</p>
+					<p class="sub-testi">Christ liu</p>
+				</div>
+			</div>
+			<div class="col-a" data-aos="zoom-in">
+				<div class="testimoni p-2">
+					<img src="assets/img/team-1.jpg" class="img-rounded" width="100%">
+					<p class="text-testi">
+						"I am a software engineer <br> after learn java <br> and database in here"
+					</p>
+					<p class="sub-testi">Mike alghazali</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<div class=" grid-flex p-5" id="contact">
+			<div class="col-a">
+				<h2 class="card-text text-white">Usefull links</h2>
+				<div class="block">
+					<a href="#" class="footer-link">
+						How to become a member?
+					</a>
+					<a href="#" class="footer-link">
+						How to take a free class?
+					</a>
+					<a href="#" class="footer-link">
+						Were I must paid?
+					</a>
+					<a href="#" class="footer-link">
+						How to become a member?
+					</a>
+					<a href="#" class="footer-link">
+						Can I be an instructure here?
+					</a>
+				</div>
+			</div>
+
+			<div class="col-a">
+				<h2 class="card-text text-white">Contact US</h2>
+				<div class="block">
+					<p class="contact">
+						<i class="fa fa-facebook"> learnio</i>
+					</p>
+					<p class="contact">
+						<i class="fa fa-twitter"> learnio_1212</i>
+					</p>
+					<p class="contact">
+						<i class="fa fa-linkedin"> learnio_ind</i>
+					</p>
+					<p class="contact">
+						<i class="fa fa-whatsapp"> 089878781213</i>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-a">
+				<h2 class="card-text text-white">Subscribe!</h2>
+				<div class="grid-flex">
+					<input type="text" name="" class="form">
+					<button class="submit-button">Submit</button>
+				</div>
+			</div>
+
+		</div>
+		<p style="text-align: center;">Copyright &copy 2021 Sabiilul hikam</p>
+	</div>
+
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  AOS.init();
+</script>
 
 	
 </body>
